@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Video Conferencing Website</title>
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			margin: 0;
+			padding: 0;
+        
+		}
+		
+    h2{
+        color:rgb(146, 10, 139);
+    }
+		header {
+			background-color: #000000;
+			color: #62ff00;
+			padding: 10px;
+			text-align: center;
+		}
+		
+		h1 {
+			margin: 0;
+		}
+		
+		section {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-around;
+			padding: 20px;
+		}
+		
+		section div {
+			background-color: #90dbe1;
+			border: 1px solid #0000ff;
+			box-shadow: 2px 2px 5px rgba(220, 83, 83, 0.3);
+			margin-bottom: 20px;
+			padding: 20px;
+			text-align: center;
+			width: 30%;
+		}
+		
+		section div h2 {
+			margin-top: 0;
+		}
+		
+		textarea {
+			border: 1px solid #0015ff;
+			height: 150px;
+			width: 100%;
+		}
+		
+		input[type="text"] {
+			border: 1px solid #0b24ff;
+			padding: 5px;
+			width: 80%;
+		}
+		
+		button {
+			background-color: #4a4aff;
+			border: none;
+			color: #f01313;
+			cursor: pointer;
+			margin-left: 10px;
+			padding: 10px 20px;
+		}
+		
+		video {
+			margin-bottom: 10px;
+			max-width: 100%;
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<h1>Video Conferencing Website</h1>
+	</header>
+	
+	<section>
+		<!-- Textual Chatting -->
+		<div>
+			<h2>Textual Chatting</h2>
+			<textarea id="chatBox" rows="10" cols="50"></textarea><br>
+			<input type="text" id="chatInput">
+			<button onclick="sendChat()">Send</button>
+		</div>
+		
+		<!-- Audio-Video Interactions -->
+		<div>
+			<h2>Audio-Video Interactions</h2>
+			<video id="localVideo" width="320" height="240" autoplay muted></video>
+			<video id="remoteVideo" width="320" height="240" autoplay></video>
+			<button onclick="startCall()">Start Call</button>
+			<button onclick="endCall()">End Call</button>
+		</div>
+		
+		<!-- Video Recording -->
+		<div>
+			<h2>Video Recording</h2>
+			<video id="recordingVideo" width="320" height="240" controls></video>
+			<button onclick="startRecording()">Start Recording</button>
+			<button onclick="stopRecording()">Stop Recording</button>
+		</div>
+	</section>
+</body>
+</html>

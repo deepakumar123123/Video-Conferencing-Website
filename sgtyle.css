@@ -1,0 +1,61 @@
+		
+    h2{
+        color:rgb(146, 10, 139);
+    }
+		header {
+			background-color: #000000;
+			color: #62ff00;
+			padding: 10px;
+			text-align: center;
+		}
+		
+		h1 {
+			margin: 0;
+		}
+		
+		section {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-around;
+			padding: 20px;
+		}
+		
+		section div {
+			background-color: #90dbe1;
+			border: 1px solid #0000ff;
+			box-shadow: 2px 2px 5px rgba(220, 83, 83, 0.3);
+			margin-bottom: 20px;
+			padding: 20px;
+			text-align: center;
+			width: 30%;
+		}
+		
+		section div h2 {
+			margin-top: 0;
+		}
+		
+		textarea {
+			border: 1px solid #0015ff;
+			height: 150px;
+			width: 100%;
+		}
+		
+		input[type="text"] {
+			border: 1px solid #0b24ff;
+			padding: 5px;
+			width: 80%;
+		}
+		
+		button {
+			background-color: #2414ff;
+			border: none;
+			color: #ff00d0;
+			cursor: pointer;
+			margin-left: 10px;
+			padding: 10px 20px;
+		}
+		
+		video {
+			margin-bottom: 10px;
+			max-width: 100%;
+		}
